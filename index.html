@@ -2,15 +2,16 @@
 <html lang="en" dir="ltr" data-theme="dark">
 
 <head>
-
     <meta charset="UTF-8">
 
-    <!-- Google Search Console -->
     <meta name="google-site-verification"
         content="jqR8lFD2uoVf5579M3elxb7_PkfDtpCAVnVH5puY_7A">
 
-    <!-- SEO -->
     <title>Mahmoud Awad | Graphic Designer</title>
+
+    <link rel="icon"
+        type="image/png"
+        href="https://uploads.onecompiler.io/44ssreqmg/44xbk82g9/1000002942.png">
 
     <meta name="description"
         content="Mahmoud Awad is a graphic designer specializing in branding, logo design, visual identity, and social media design.">
@@ -19,34 +20,21 @@
         content="Mahmoud Awad, محمود عوض, Graphic Designer, مصمم جرافيك, Branding, Logo Design, Visual Identity, Social Media Design">
 
     <meta name="author" content="Mahmoud Awad">
-
     <meta name="robots" content="index, follow">
 
-    <meta name="googlebot" content="index, follow">
-
-    <!-- Canonical -->
     <link rel="canonical"
         href="https://mahmoud-awad-1.vercel.app/">
 
-    <!-- Mobile -->
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicon -->
-    <link
-        rel="icon"
-        type="image/png"
-        href="https://uploads.onecompiler.io/44ssreqmg/44xbk82g9/1000002942.png">
-
-    <!-- Open Graph -->
     <meta property="og:title"
         content="Mahmoud Awad | Graphic Designer">
 
     <meta property="og:description"
         content="Mahmoud Awad is a graphic designer specializing in branding, logo design, visual identity, and social media design.">
 
-    <meta property="og:type"
-        content="website">
+    <meta property="og:type" content="website">
 
     <meta property="og:url"
         content="https://mahmoud-awad-1.vercel.app/">
@@ -57,7 +45,6 @@
     <meta property="og:image"
         content="https://uploads.onecompiler.io/44ssreqmg/44xbk82g9/1000002942.png">
 
-    <!-- Twitter -->
     <meta name="twitter:card"
         content="summary_large_image">
 
@@ -70,7 +57,6 @@
     <meta name="twitter:image"
         content="https://uploads.onecompiler.io/44ssreqmg/44xbk82g9/1000002942.png">
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -83,600 +69,411 @@
     }
     </script>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
-
-    <!-- Hero Title Animation -->
-    <style>
-
-        .hero-title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .hero-title .title-name,
-        .hero-title .title-role {
-            display: inline-block;
-            opacity: 0;
-        }
-
-        .hero-title .title-name {
-            animation: nameFromLeft 1s cubic-bezier(.22, 1, .36, 1) .8s forwards;
-        }
-
-        .hero-title .title-role {
-            color: var(--primary);
-            animation: roleFromRight 1s cubic-bezier(.22, 1, .36, 1) .8s forwards;
-        }
-
-        .hero-title .title-separator {
-            display: inline-block;
-            color: #D6A41D;
-            opacity: 0;
-            transform: translateY(70px) scaleY(0);
-            animation: separatorFromBottom .8s cubic-bezier(.22, 1, .36, 1) forwards;
-        }
-
-        @keyframes separatorFromBottom {
-
-            from {
-                opacity: 0;
-                transform: translateY(70px) scaleY(0);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0) scaleY(1);
-            }
-
-        }
-
-        @keyframes nameFromLeft {
-
-            from {
-                opacity: 0;
-                transform: translateX(70px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-
-        }
-
-        @keyframes roleFromRight {
-
-            from {
-                opacity: 0;
-                transform: translateX(-70px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-
-        }
-
-        @media (max-width: 600px) {
-
-            .hero-title {
-                gap: 6px;
-                font-size: 20px;
-            }
-
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-
-            .hero-title .title-name,
-            .hero-title .title-role,
-            .hero-title .title-separator {
-                animation: none;
-                opacity: 1;
-                transform: none;
-            }
-
-        }
-
-    </style>
-
 </head>
-
 
 <body>
 
-    <!-- Scroll Progress -->
-    <div id="scrollProgress"></div>
+<div id="scrollProgress"></div>
+<canvas id="particles"></canvas>
+<div class="cursor-glow"></div>
+<div class="bg-grid"></div>
 
-    <!-- Background -->
-    <canvas id="particles"></canvas>
+<header>
 
-    <div class="cursor-glow"></div>
+    <div class="logo">
+        Mahmoud <span class="name-accent">Awad</span>
+    </div>
 
-    <div class="bg-grid"></div>
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+
+        <a href="#contact" id="contactLink">
+            Contact
+        </a>
+
+        <button
+            class="theme-btn"
+            id="themeButton"
+            type="button"
+            aria-label="Toggle theme">
+            🌙
+        </button>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-orbit orbit-one"></div>
+    <div class="hero-orbit orbit-two"></div>
+
+    <div class="hero-image parallax" data-speed="0.08">
+
+        <div class="image-shine"></div>
+
+        <img
+            src="https://uploads.onecompiler.io/44ssreqmg/44xbk82g9/1000002942.png"
+            alt="Mahmoud Awad graphic designer portrait">
+
+    </div>
+
+    <p class="eyebrow">
+        CREATIVE DESIGNER • VISUAL ARTIST
+    </p>
+
+    <h1 class="hero-title parallax" data-speed="0.04">
+
+        <span class="title-name">
+            Mahmoud
+            <span class="name-accent">Awad</span>
+        </span>
+
+        <span class="title-separator">|</span>
+
+        <span class="title-role">
+            Graphic Designer
+        </span>
+
+    </h1>
+
+    <p class="hero-description">
+        Creating Premium Branding, Luxury Logos and Modern Visual Identities.
+    </p>
+
+    <a href="#projects" class="btn magnetic">
+        View My Work <span>↗</span>
+    </a>
+
+</section>
 
 
-    <!-- HEADER -->
-    <header>
+<section class="about reveal" id="about">
 
-        <div class="logo">
-            Mahmoud Awad
+    <span class="section-label">
+        01 / ABOUT
+    </span>
+
+    <h2>
+        About Me
+    </h2>
+
+    <p>
+        I'm Mahmoud Awad, a graphic designer specializing in
+        branding, logo design, visual identity, and social media design.
+        My goal is to create designs that leave a memorable impression.
+    </p>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <strong class="counter"
+                data-target="10"
+                data-suffix="+">
+                0
+            </strong>
+
+            <span>Projects</span>
         </div>
 
-        <nav>
+        <div class="stat-card">
+            <strong class="counter"
+                data-target="1"
+                data-suffix="+">
+                0
+            </strong>
 
-            <a href="#home">
-                Home
-            </a>
+            <span>Years Experience</span>
+        </div>
 
-            <a href="#about">
-                About
-            </a>
+        <div class="stat-card">
+            <strong class="counter"
+                data-target="100"
+                data-suffix="%">
+                0
+            </strong>
 
-            <a href="#projects">
-                Projects
-            </a>
+            <span>Creative Energy</span>
+        </div>
 
-            <a href="#contact"
-               id="contactLink">
-                Contact
-            </a>
+    </div>
 
-            <button
-                class="theme-btn"
-                id="themeButton"
-                aria-label="Toggle theme">
-                🌙
-            </button>
+</section>
 
-        </nav>
 
-    </header>
+<section class="projects reveal" id="projects">
 
+    <span class="section-label">
+        02 / SELECTED WORK
+    </span>
 
-    <main>
+    <h2>
+        Featured Projects
+    </h2>
 
+    <div class="project-tools">
 
-        <!-- HERO -->
-        <section
-            class="hero"
-            id="home">
+        <button class="filter-btn active"
+            data-filter="all"
+            type="button">
+            All
+        </button>
 
-            <div class="hero-orbit orbit-one"></div>
+        <button class="filter-btn"
+            data-filter="branding"
+            type="button">
+            Branding
+        </button>
 
-            <div class="hero-orbit orbit-two"></div>
+        <button class="filter-btn"
+            data-filter="campaign"
+            type="button">
+            Campaigns
+        </button>
 
+    </div>
 
-            <div
-                class="hero-image parallax"
-                data-speed="0.08">
 
-                <div class="image-shine"></div>
+    <div class="cards">
 
-                <img
-                    src="https://uploads.onecompiler.io/44ssreqmg/44xbk82g9/1000002942.png"
-                    alt="Mahmoud Awad graphic designer portrait">
+        <article
+            class="card tilt-card"
+            data-category="branding"
+            data-project="panadora">
 
-            </div>
-
-
-            <p class="eyebrow">
-                CREATIVE DESIGNER • VISUAL ARTIST
-            </p>
-
-
-            <!-- Main SEO Heading -->
-            <h1
-                class="hero-title parallax"
-                data-speed="0.04">
-
-                <span class="title-name">
-                    Mahmoud Awad
-                </span>
-
-                <span
-                    class="title-separator"
-                    aria-hidden="true">
-                    |
-                </span>
-
-                <span class="title-role">
-                    Graphic Designer
-                </span>
-
-            </h1>
-
-
-            <!-- Hidden typing element required by JS -->
-            <h2>
-                <span id="typingText"></span>
-                <span class="typing-cursor">|</span>
-            </h2>
-
-
-            <p class="hero-description">
-                Creating Premium Branding, Luxury Logos and Modern Visual Identities.
-            </p>
-
-
-            <a
-                href="#projects"
-                class="btn magnetic">
-
-                View My Work
-                <span>↗</span>
-
-            </a>
-
-        </section>
-
-
-
-        <!-- ABOUT -->
-        <section
-            class="about reveal"
-            id="about">
-
-            <span class="section-label">
-                01 / ABOUT
-            </span>
-
-
-            <h2>
-                About Me
-            </h2>
-
-
-            <p>
-                I'm Mahmoud Awad, a graphic designer specializing in
-                branding, logo design, visual identity and social media design.
-                My goal is to create designs that leave a memorable impression.
-            </p>
-
-
-            <div class="stats">
-
-
-                <div class="stat-card">
-
-                    <strong
-                        class="counter"
-                        data-target="50"
-                        data-suffix="+">
-                        0
-                    </strong>
-
-                    <span>
-                        Projects
-                    </span>
-
-                </div>
-
-
-                <div class="stat-card">
-
-                    <strong
-                        class="counter"
-                        data-target="4"
-                        data-suffix="+">
-                        0
-                    </strong>
-
-                    <span>
-                        Years Experience
-                    </span>
-
-                </div>
-
-
-                <div class="stat-card">
-
-                    <strong
-                        class="counter"
-                        data-target="100"
-                        data-suffix="%">
-                        0
-                    </strong>
-
-                    <span>
-                        Creative Energy
-                    </span>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- PROJECTS -->
-        <section
-            class="projects reveal"
-            id="projects">
-
-            <span class="section-label">
-                02 / SELECTED WORK
-            </span>
-
-
-            <h2>
-                Featured Projects
-            </h2>
-
-
-            <div class="project-tools">
-
-
-                <button
-                    class="filter-btn active"
-                    data-filter="all">
-
-                    All
-
-                </button>
-
-
-                <button
-                    class="filter-btn"
-                    data-filter="branding">
-
-                    Branding
-
-                </button>
-
-
-                <button
-                    class="filter-btn"
-                    data-filter="campaign">
-
-                    Campaigns
-
-                </button>
-
-
-            </div>
-
-
-            <div class="cards">
-
-
-                <!-- PANADORA -->
-                <article
-                    class="card tilt-card"
-                    data-category="branding"
-                    data-project="panadora">
-
-                    <div class="card-number">
-                        01
-                    </div>
-
-
-                    <img
-                        src="https://uploads.onecompiler.io/44ssreqmg/1785936551769/1000002972.png"
-                        alt="Panadora Jewelry branding project by Mahmoud Awad">
-
-
-                    <div class="overlay">
-
-                        <h3>
-                            Panadora Jewelry
-                        </h3>
-
-                        <span>
-                            View Details ↗
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- COFFEE -->
-                <article
-                    class="card tilt-card"
-                    data-category="branding"
-                    data-project="coffee">
-
-                    <div class="card-number">
-                        02
-                    </div>
-
-
-                    <img
-                        src="https://uploads.onecompiler.io/44ssreqmg/1785934921277/1000002830.png"
-                        alt="Coffee branding project by Mahmoud Awad">
-
-
-                    <div class="overlay">
-
-                        <h3>
-                            Coffee Branding
-                        </h3>
-
-                        <span>
-                            View Details ↗
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- JUICE -->
-                <article
-                    class="card tilt-card"
-                    data-category="campaign"
-                    data-project="juice">
-
-                    <div class="card-number">
-                        03
-                    </div>
-
-
-                    <img
-                        src="https://uploads.onecompiler.io/44ssreqmg/1785935603521/1000002971.jpg"
-                        alt="Juice advertising campaign by Mahmoud Awad">
-
-
-                    <div class="overlay">
-
-                        <h3>
-                            Juice Campaign
-                        </h3>
-
-                        <span>
-                            View Details ↗
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- PROJECT POPUP -->
-    <div
-        class="popup"
-        id="projectPopup">
-
-        <div class="popup-content">
-
-
-            <button
-                class="close"
-                id="closeProjectButton"
-                aria-label="Close project details">
-
-                &times;
-
-            </button>
-
+            <div class="card-number">01</div>
 
             <img
-                id="popupImage"
-                alt="Project preview">
+                src="https://uploads.onecompiler.io/44ssreqmg/1785936551769/1000002972.png"
+                alt="Panadora Jewelry branding">
+
+            <div class="overlay">
+
+                <h3>Panadora Jewelry</h3>
+
+                <span>View Details ↗</span>
+
+            </div>
+
+        </article>
 
 
-            <span class="section-label">
-                PROJECT DETAILS
-            </span>
+        <article
+            class="card tilt-card"
+            data-category="branding"
+            data-project="coffee">
+
+            <div class="card-number">02</div>
+
+            <img
+                src="https://uploads.onecompiler.io/44ssreqmg/1785934921277/1000002830.png"
+                alt="Coffee Branding">
+
+            <div class="overlay">
+
+                <h3>Coffee Branding</h3>
+
+                <span>View Details ↗</span>
+
+            </div>
+
+        </article>
 
 
-            <h2 id="popupTitle"></h2>
+        <article
+            class="card tilt-card"
+            data-category="campaign"
+            data-project="juice">
 
+            <div class="card-number">03</div>
 
-            <p id="popupDescription"></p>
+            <img
+                src="https://uploads.onecompiler.io/44ssreqmg/1785935603521/1000002971.jpg"
+                alt="Juice Campaign">
 
+            <div class="overlay">
 
-            <ul id="popupTasks"></ul>
+                <h3>Juice Campaign</h3>
 
+                <span>View Details ↗</span>
 
-        </div>
+            </div>
 
-    </div>
-
-
-
-    <!-- CONTACT POPUP -->
-    <div
-        class="contact-popup"
-        id="contactPopup">
-
-        <div class="contact-box">
-
-
-            <button
-                class="close"
-                id="closeContactButton"
-                aria-label="Close contact form">
-
-                &times;
-
-            </button>
-
-
-            <span class="section-label">
-                LET'S CONNECT
-            </span>
-
-
-            <h2>
-                Contact Me
-            </h2>
-
-
-            <p>
-                Send your phone number and I will contact you as soon as possible.
-            </p>
-
-
-            <input
-                type="tel"
-                id="phoneInput"
-                placeholder="Phone Number"
-                aria-label="Phone Number">
-
-
-            <button
-                class="send-btn"
-                id="sendPhoneButton">
-
-                Send
-
-            </button>
-
-
-            <p id="contactStatus"></p>
-
-
-        </div>
+        </article>
 
     </div>
 
+</section>
 
 
-    <!-- FOOTER -->
-    <footer>
+<section class="work-with-us reveal"
+    id="work-with-us">
 
-        <h3>
-            Mahmoud Awad
-        </h3>
+    <span class="section-label">
+        03 / LET'S WORK TOGETHER
+    </span>
+
+    <h2>
+        Start Working With Me
+    </h2>
+
+    <p>
+        Tell me about your project and let's bring your creative vision to life.
+    </p>
+
+    <form class="work-form">
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required>
+
+        <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            required>
+
+        <button type="submit">
+            Start Working With Me
+        </button>
+
+    </form>
+
+
+    <div class="direct-call">
+
+        <button
+            class="direct-call-toggle"
+            id="directCallButton"
+            type="button"
+            aria-expanded="false">
+
+            <span class="call-icon">
+                ☎
+            </span>
+
+        </button>
+
+        <a
+            class="phone-number"
+            id="phoneNumber"
+            href="tel:01055193707">
+
+            <span class="phone-digit">0</span>
+            <span class="phone-digit">1</span>
+            <span class="phone-digit">0</span>
+            <span class="phone-digit">5</span>
+            <span class="phone-digit">5</span>
+            <span class="phone-digit">1</span>
+            <span class="phone-digit">9</span>
+            <span class="phone-digit">3</span>
+            <span class="phone-digit">7</span>
+            <span class="phone-digit">0</span>
+            <span class="phone-digit">7</span>
+
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<div class="popup" id="projectPopup">
+
+    <div class="popup-content">
+
+        <button
+            class="close"
+            id="closeProjectButton"
+            type="button">
+            &times;
+        </button>
+
+        <img id="popupImage" alt="Project preview">
+
+        <span class="section-label">
+            PROJECT DETAILS
+        </span>
+
+        <h2 id="popupTitle"></h2>
+
+        <p id="popupDescription"></p>
+
+        <ul id="popupTasks"></ul>
+
+    </div>
+
+</div>
+
+
+<div class="contact-popup" id="contactPopup">
+
+    <div class="contact-box">
+
+        <button
+            class="close"
+            id="closeContactButton"
+            type="button">
+            &times;
+        </button>
+
+        <span class="section-label">
+            LET'S CONNECT
+        </span>
+
+        <h2>Contact Me</h2>
 
         <p>
-            Graphic Designer Portfolio ©
-            <span id="currentYear"></span>
+            Send your phone number and I will contact you as soon as possible.
         </p>
 
-    </footer>
+        <input
+            type="tel"
+            id="phoneInput"
+            placeholder="Phone Number">
+
+        <button
+            class="send-btn"
+            id="sendPhoneButton"
+            type="button">
+            Send
+        </button>
+
+        <p id="contactStatus"></p>
+
+    </div>
+
+</div>
 
 
+<footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    <h3>
+        Mahmoud Awad
+    </h3>
 
+    <p>
+        Graphic Designer Portfolio ©
+        <span id="currentYear"></span>
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
-
 </html>

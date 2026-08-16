@@ -5,96 +5,70 @@
 
     <meta charset="UTF-8">
 
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="jqR8lFD2uoVf5579M3elxb7_PkfDtpCAVnVH5puY_7A">
+    <!-- Google Search Console -->
+    <meta name="google-site-verification"
+        content="jqR8lFD2uoVf5579M3elxb7_PkfDtpCAVnVH5puY_7A">
 
-    <!-- Website Title -->
+    <!-- SEO -->
     <title>Mahmoud Awad | Graphic Designer</title>
+
+    <meta name="description"
+        content="Mahmoud Awad is a graphic designer specializing in branding, logo design, visual identity, and social media design.">
+
+    <meta name="keywords"
+        content="Mahmoud Awad, محمود عوض, Graphic Designer, مصمم جرافيك, Branding, Logo Design, Visual Identity, Social Media Design">
+
+    <meta name="author" content="Mahmoud Awad">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical"
+        href="https://mahmoud-awad-1.vercel.app/">
+
+    <!-- Mobile -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
     <link
         rel="icon"
         type="image/png"
-        href="https://uploads.onecompiler.io/44ssreqmg/44xbk82g9/1000002942.png"
-    >
-
-    <!-- SEO -->
-    <meta
-        name="description"
-        content="Mahmoud Awad is a graphic designer specializing in branding, logo design, visual identity, and social media design."
-    >
-
-    <meta
-        name="keywords"
-        content="Mahmoud Awad, محمود عوض, Graphic Designer, مصمم جرافيك, Branding, Logo Design, Visual Identity, Social Media Design"
-    >
-
-    <meta name="author" content="Mahmoud Awad">
-    <meta name="robots" content="index, follow">
-
-    <!-- Canonical URL -->
-    <link
-        rel="canonical"
-        href="https://mahmoud-awad-1.vercel.app/"
-    >
-
-    <!-- Mobile -->
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+        href="https://uploads.onecompiler.io/44ssreqmg/44xbk82g9/1000002942.png">
 
     <!-- Open Graph -->
-    <meta
-        property="og:title"
-        content="Mahmoud Awad | Graphic Designer"
-    >
+    <meta property="og:title"
+        content="Mahmoud Awad | Graphic Designer">
 
-    <meta
-        property="og:description"
-        content="Mahmoud Awad is a graphic designer specializing in branding, logo design, visual identity, and social media design."
-    >
+    <meta property="og:description"
+        content="Mahmoud Awad is a graphic designer specializing in branding, logo design, visual identity, and social media design.">
 
-    <meta
-        property="og:type"
-        content="website"
-    >
+    <meta property="og:type"
+        content="website">
 
-    <meta
-        property="og:url"
-        content="https://mahmoud-awad-1.vercel.app/"
-    >
+    <meta property="og:url"
+        content="https://mahmoud-awad-1.vercel.app/">
 
-    <meta
-        property="og:site_name"
-        content="Mahmoud Awad"
-    >
+    <meta property="og:site_name"
+        content="Mahmoud Awad">
 
-    <meta
-        property="og:image"
-        content="https://uploads.onecompiler.io/44ssreqmg/44xbk82g9/1000002942.png"
-    >
+    <meta property="og:image"
+        content="https://uploads.onecompiler.io/44ssreqmg/44xbk82g9/1000002942.png">
 
     <!-- Twitter -->
-    <meta
-        name="twitter:card"
-        content="summary_large_image"
-    >
+    <meta name="twitter:card"
+        content="summary_large_image">
 
-    <meta
-        name="twitter:title"
-        content="Mahmoud Awad | Graphic Designer"
-    >
+    <meta name="twitter:title"
+        content="Mahmoud Awad | Graphic Designer">
 
-    <meta
-        name="twitter:description"
-        content="Mahmoud Awad is a graphic designer specializing in branding, logo design, visual identity, and social media design."
-    >
+    <meta name="twitter:description"
+        content="Mahmoud Awad is a graphic designer specializing in branding, logo design, visual identity, and social media design.">
 
-    <meta
-        name="twitter:image"
-        content="https://uploads.onecompiler.io/44ssreqmg/44xbk82g9/1000002942.png"
-    >
+    <meta name="twitter:image"
+        content="https://uploads.onecompiler.io/44ssreqmg/44xbk82g9/1000002942.png">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -109,414 +83,211 @@
     }
     </script>
 
-    <!-- Main CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
+        rel="stylesheet">
 
+
+    <!-- Hero Title Animation -->
     <style>
 
-        .name-accent {
-            color: #D6A41D;
-            font-family: "Cinzel", serif;
-        }
-
-        html[data-theme="light"] .name-accent {
-            color: #D6A41D;
-        }
-
-        .hero h1.hero-title {
+        .hero-title {
             display: flex;
-            align-items: baseline;
+            align-items: center;
             justify-content: center;
-            gap: clamp(4px, .8vw, 9px);
-            width: 100%;
-            max-width: 100%;
-            overflow: visible;
-            white-space: nowrap;
-            font-family: "Cinzel", serif;
-            font-size: clamp(20px, 3.2vw, 38px);
-            line-height: 1.15;
+            gap: 12px;
+            flex-wrap: wrap;
         }
 
         .hero-title .title-name,
         .hero-title .title-role {
             display: inline-block;
-            flex: 0 0 auto;
-            font-size: 1em;
-            line-height: inherit;
-            white-space: nowrap;
+            opacity: 0;
         }
 
         .hero-title .title-name {
-            font-family: "Cinzel", serif;
-            animation: titleFromLeft .95s cubic-bezier(.22, 1, .36, 1) .85s both;
-        }
-
-        .hero-title .title-separator {
-            display: inline-block;
-            flex: 0 0 auto;
-            color: #D6A41D;
-            font-family: "Poppins", sans-serif;
-            font-size: .75em;
-            font-weight: 300;
-            line-height: 1;
-            transform-origin: bottom center;
-            animation: separatorRise .8s cubic-bezier(.22, 1, .36, 1) both;
+            animation: nameFromLeft 1s cubic-bezier(.22, 1, .36, 1) .8s forwards;
         }
 
         .hero-title .title-role {
             color: var(--primary);
-            font-family: "Cinzel", serif;
-            font-weight: 600;
-            letter-spacing: clamp(0px, .05vw, .6px);
-            animation: titleFromRight .95s cubic-bezier(.22, 1, .36, 1) .85s both;
+            animation: roleFromRight 1s cubic-bezier(.22, 1, .36, 1) .8s forwards;
         }
 
-        @keyframes separatorRise {
+        .hero-title .title-separator {
+            display: inline-block;
+            color: #D6A41D;
+            opacity: 0;
+            transform: translateY(70px) scaleY(0);
+            animation: separatorFromBottom .8s cubic-bezier(.22, 1, .36, 1) forwards;
+        }
+
+        @keyframes separatorFromBottom {
+
             from {
                 opacity: 0;
-                transform: translateY(60px) scaleY(0);
+                transform: translateY(70px) scaleY(0);
             }
 
             to {
                 opacity: 1;
                 transform: translateY(0) scaleY(1);
             }
+
         }
 
-        @keyframes titleFromLeft {
+        @keyframes nameFromLeft {
+
             from {
                 opacity: 0;
-                transform: translateX(55px);
+                transform: translateX(70px);
             }
 
             to {
                 opacity: 1;
                 transform: translateX(0);
             }
+
         }
 
-        @keyframes titleFromRight {
+        @keyframes roleFromRight {
+
             from {
                 opacity: 0;
-                transform: translateX(-55px);
+                transform: translateX(-70px);
             }
 
             to {
                 opacity: 1;
                 transform: translateX(0);
             }
-        }
 
-        .work-with-us {
-            padding: 110px 20px;
-            text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, .1);
-        }
-
-        .work-with-us h2 {
-            margin: 18px 0 12px;
-            color: var(--text);
-            font-family: "Cinzel", serif;
-            font-size: clamp(28px, 5vw, 46px);
-        }
-
-        .work-with-us > p {
-            max-width: 600px;
-            margin: 0 auto 30px;
-            color: var(--muted);
-            line-height: 1.8;
-        }
-
-        .work-form {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 260px));
-            justify-content: center;
-            gap: 14px;
-            max-width: 550px;
-            margin: auto;
-        }
-
-        .work-form input {
-            width: 100%;
-            padding: 14px 16px;
-            color: var(--text);
-            font-family: "Poppins", sans-serif;
-            font-size: 14px;
-            outline: none;
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            background: rgba(255, 255, 255, .06);
-            transition: .3s;
-        }
-
-        .work-form input:focus {
-            border-color: #D6A41D;
-            box-shadow: 0 0 0 3px rgba(214, 164, 29, .12);
-        }
-
-        .work-form input::placeholder {
-            color: var(--muted);
-        }
-
-        .work-form button {
-            grid-column: 1 / -1;
-            justify-self: center;
-            padding: 13px 30px;
-            color: white;
-            font-family: "Poppins", sans-serif;
-            font-weight: 500;
-            border: 0;
-            border-radius: 30px;
-            background: var(--primary);
-            cursor: pointer;
-            transition: .3s;
-        }
-
-        .work-form button:hover {
-            background: #D6A41D;
-            color: #050505;
-            transform: translateY(-3px);
-        }
-
-        .direct-call {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 38px;
-            text-align: center;
-        }
-
-        .direct-call-toggle {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 58px;
-            height: 58px;
-            padding: 0;
-            color: var(--text);
-            border: 1px solid var(--border);
-            border-radius: 50%;
-            background: transparent;
-            cursor: pointer;
-            transition: .3s ease;
-        }
-
-        .direct-call-toggle:hover,
-        .direct-call.is-open .direct-call-toggle {
-            color: white;
-            background: var(--primary);
-            transform: translateY(-3px) scale(1.08);
-        }
-
-        .call-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-            font-size: 25px;
-        }
-
-        .call-label {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-        }
-
-        .phone-number {
-            display: flex;
-            direction: ltr;
-            align-items: baseline;
-            justify-content: center;
-            gap: 2px;
-            min-height: 42px;
-            margin-top: 18px;
-            color: #050505;
-            font-family: "Poppins", sans-serif;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-decoration: none;
-        }
-
-        .direct-call:not(.is-open) .phone-number {
-            visibility: hidden;
-        }
-
-        .phone-digit {
-            display: inline-block;
-            opacity: 0;
-            color: #050505;
-            transform: translateY(15px) scale(.2);
-            animation: none;
-        }
-
-        .direct-call.is-open .phone-digit {
-            animation: digitReveal .55s cubic-bezier(.22, 1, .36, 1) forwards;
-        }
-
-        .phone-digit:nth-child(1) { font-size: 16px; animation-delay: .08s; }
-        .phone-digit:nth-child(2) { font-size: 17px; animation-delay: .16s; }
-        .phone-digit:nth-child(3) { font-size: 18px; animation-delay: .24s; }
-        .phone-digit:nth-child(4) { font-size: 19px; animation-delay: .32s; }
-        .phone-digit:nth-child(5) { font-size: 20px; animation-delay: .40s; }
-        .phone-digit:nth-child(6) { font-size: 21px; animation-delay: .48s; }
-        .phone-digit:nth-child(7) { font-size: 23px; animation-delay: .56s; }
-        .phone-digit:nth-child(8) { font-size: 25px; animation-delay: .64s; }
-        .phone-digit:nth-child(9) { font-size: 27px; animation-delay: .72s; }
-        .phone-digit:nth-child(10) { font-size: 29px; animation-delay: .80s; }
-        .phone-digit:nth-child(11) { font-size: 31px; animation-delay: .88s; }
-
-        @keyframes digitReveal {
-            0% {
-                opacity: 0;
-                transform: translateY(15px) scale(.2);
-            }
-
-            65% {
-                opacity: 1;
-                transform: translateY(-4px) scale(1.12);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
         }
 
         @media (max-width: 600px) {
 
-            .hero h1.hero-title {
-                gap: 3px;
-                font-size: clamp(13px, 4vw, 22px);
-                letter-spacing: 0;
+            .hero-title {
+                gap: 6px;
+                font-size: 20px;
             }
 
-            .hero-title .title-role {
-                letter-spacing: 0;
-            }
-
-            .hero-title .title-separator {
-                font-size: .7em;
-            }
-
-            .work-form {
-                grid-template-columns: 1fr;
-                max-width: 330px;
-            }
-
-            .work-form button {
-                grid-column: auto;
-                width: 100%;
-            }
-
-            .phone-number {
-                gap: 1px;
-                margin-top: 16px;
-                letter-spacing: 0;
-            }
-        }
-
-        @media (max-width: 360px) {
-
-            .hero h1.hero-title {
-                gap: 2px;
-                font-size: 11px;
-            }
-
-            .phone-number {
-                transform: scale(.9);
-            }
         }
 
         @media (prefers-reduced-motion: reduce) {
 
             .hero-title .title-name,
-            .hero-title .title-separator,
             .hero-title .title-role,
-            .phone-digit {
+            .hero-title .title-separator {
                 animation: none;
                 opacity: 1;
                 transform: none;
             }
+
         }
 
     </style>
 
 </head>
 
+
 <body>
 
+    <!-- Scroll Progress -->
     <div id="scrollProgress"></div>
+
+    <!-- Background -->
     <canvas id="particles"></canvas>
+
     <div class="cursor-glow"></div>
+
     <div class="bg-grid"></div>
 
+
+    <!-- HEADER -->
     <header>
 
         <div class="logo">
-            Mahmoud <span class="name-accent">Awad</span>
+            Mahmoud Awad
         </div>
 
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact" id="contactLink">Contact</a>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#contact"
+               id="contactLink">
+                Contact
+            </a>
 
             <button
                 class="theme-btn"
                 id="themeButton"
-                aria-label="Toggle theme"
-            >
+                aria-label="Toggle theme">
                 🌙
             </button>
+
         </nav>
 
     </header>
 
+
     <main>
 
+
         <!-- HERO -->
-        <section class="hero" id="home">
+        <section
+            class="hero"
+            id="home">
 
             <div class="hero-orbit orbit-one"></div>
+
             <div class="hero-orbit orbit-two"></div>
 
-            <div class="hero-image parallax" data-speed="0.08">
+
+            <div
+                class="hero-image parallax"
+                data-speed="0.08">
 
                 <div class="image-shine"></div>
 
                 <img
                     src="https://uploads.onecompiler.io/44ssreqmg/44xbk82g9/1000002942.png"
-                    alt="Mahmoud Awad graphic designer portrait"
-                >
+                    alt="Mahmoud Awad graphic designer portrait">
 
             </div>
+
 
             <p class="eyebrow">
                 CREATIVE DESIGNER • VISUAL ARTIST
             </p>
 
-            <h1 class="hero-title parallax" data-speed="0.04">
+
+            <!-- Main SEO Heading -->
+            <h1
+                class="hero-title parallax"
+                data-speed="0.04">
 
                 <span class="title-name">
-                    Mahmoud
-                    <span class="name-accent">Awad</span>
+                    Mahmoud Awad
                 </span>
 
                 <span
                     class="title-separator"
-                    aria-hidden="true"
-                >
+                    aria-hidden="true">
                     |
                 </span>
 
@@ -526,137 +297,177 @@
 
             </h1>
 
+
+            <!-- Hidden typing element required by JS -->
+            <h2>
+                <span id="typingText"></span>
+                <span class="typing-cursor">|</span>
+            </h2>
+
+
             <p class="hero-description">
                 Creating Premium Branding, Luxury Logos and Modern Visual Identities.
             </p>
 
-            <a href="#projects" class="btn magnetic">
-                View My Work <span>↗</span>
+
+            <a
+                href="#projects"
+                class="btn magnetic">
+
+                View My Work
+                <span>↗</span>
+
             </a>
 
         </section>
 
 
+
         <!-- ABOUT -->
-        <section class="about reveal" id="about">
+        <section
+            class="about reveal"
+            id="about">
 
             <span class="section-label">
                 01 / ABOUT
             </span>
 
+
             <h2>
                 About Me
             </h2>
 
+
             <p>
                 I'm Mahmoud Awad, a graphic designer specializing in
-                branding, logo design, visual identity, and social media design.
+                branding, logo design, visual identity and social media design.
                 My goal is to create designs that leave a memorable impression.
             </p>
 
+
             <div class="stats">
 
+
                 <div class="stat-card">
+
                     <strong
                         class="counter"
-                        data-target="10"
-                        data-suffix="+"
-                    >
+                        data-target="50"
+                        data-suffix="+">
                         0
                     </strong>
 
                     <span>
                         Projects
                     </span>
+
                 </div>
 
+
                 <div class="stat-card">
+
                     <strong
                         class="counter"
-                        data-target="1"
-                        data-suffix="+"
-                    >
+                        data-target="4"
+                        data-suffix="+">
                         0
                     </strong>
 
                     <span>
                         Years Experience
                     </span>
+
                 </div>
 
+
                 <div class="stat-card">
+
                     <strong
                         class="counter"
                         data-target="100"
-                        data-suffix="%"
-                    >
+                        data-suffix="%">
                         0
                     </strong>
 
                     <span>
                         Creative Energy
                     </span>
+
                 </div>
+
 
             </div>
 
         </section>
 
 
+
         <!-- PROJECTS -->
-        <section class="projects reveal" id="projects">
+        <section
+            class="projects reveal"
+            id="projects">
 
             <span class="section-label">
                 02 / SELECTED WORK
             </span>
 
+
             <h2>
                 Featured Projects
             </h2>
 
+
             <div class="project-tools">
+
 
                 <button
                     class="filter-btn active"
-                    data-filter="all"
-                >
+                    data-filter="all">
+
                     All
+
                 </button>
+
 
                 <button
                     class="filter-btn"
-                    data-filter="branding"
-                >
+                    data-filter="branding">
+
                     Branding
+
                 </button>
+
 
                 <button
                     class="filter-btn"
-                    data-filter="campaign"
-                >
+                    data-filter="campaign">
+
                     Campaigns
+
                 </button>
+
 
             </div>
 
 
             <div class="cards">
 
-                <!-- Panadora -->
+
+                <!-- PANADORA -->
                 <article
                     class="card tilt-card"
                     data-category="branding"
-                    data-project="panadora"
-                >
+                    data-project="panadora">
 
                     <div class="card-number">
                         01
                     </div>
 
+
                     <img
                         src="https://uploads.onecompiler.io/44ssreqmg/1785936551769/1000002972.png"
-                        alt="Panadora Jewelry branding designed by Mahmoud Awad"
-                    >
+                        alt="Panadora Jewelry branding project by Mahmoud Awad">
+
 
                     <div class="overlay">
 
@@ -673,21 +484,22 @@
                 </article>
 
 
-                <!-- Coffee -->
+
+                <!-- COFFEE -->
                 <article
                     class="card tilt-card"
                     data-category="branding"
-                    data-project="coffee"
-                >
+                    data-project="coffee">
 
                     <div class="card-number">
                         02
                     </div>
 
+
                     <img
                         src="https://uploads.onecompiler.io/44ssreqmg/1785934921277/1000002830.png"
-                        alt="Coffee shop branding and visual identity designed by Mahmoud Awad"
-                    >
+                        alt="Coffee branding project by Mahmoud Awad">
+
 
                     <div class="overlay">
 
@@ -704,21 +516,22 @@
                 </article>
 
 
-                <!-- Juice -->
+
+                <!-- JUICE -->
                 <article
                     class="card tilt-card"
                     data-category="campaign"
-                    data-project="juice"
-                >
+                    data-project="juice">
 
                     <div class="card-number">
                         03
                     </div>
 
+
                     <img
                         src="https://uploads.onecompiler.io/44ssreqmg/1785935603521/1000002971.jpg"
-                        alt="Juice advertising campaign designed by Mahmoud Awad"
-                    >
+                        alt="Juice advertising campaign by Mahmoud Awad">
+
 
                     <div class="overlay">
 
@@ -734,99 +547,6 @@
 
                 </article>
 
-            </div>
-
-        </section>
-
-
-        <!-- WORK WITH US -->
-        <section
-            class="work-with-us reveal"
-            id="work-with-us"
-        >
-
-            <span class="section-label">
-                03 / LET'S WORK TOGETHER
-            </span>
-
-            <h2>
-                Start Working With Me
-            </h2>
-
-            <p>
-                Tell me about your project and let's bring your creative vision to life.
-            </p>
-
-            <form class="work-form">
-
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Email Address"
-                    aria-label="Email Address"
-                    required
-                >
-
-                <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone Number"
-                    aria-label="Phone Number"
-                    required
-                >
-
-                <button type="submit">
-                    Start Working With Me
-                </button>
-
-            </form>
-
-
-            <div class="direct-call">
-
-                <button
-                    class="direct-call-toggle"
-                    id="directCallButton"
-                    type="button"
-                    aria-label="Or call Mahmoud Awad directly"
-                    aria-expanded="false"
-                    aria-controls="phoneNumber"
-                >
-
-                    <span
-                        class="call-icon"
-                        aria-hidden="true"
-                    >
-                        ☎
-                    </span>
-
-                    <span class="call-label">
-                        Or call Mahmoud Awad directly
-                    </span>
-
-                </button>
-
-
-                <a
-                    class="phone-number"
-                    id="phoneNumber"
-                    href="tel:01055193707"
-                    aria-label="Call Mahmoud Awad at 01055193707"
-                >
-
-                    <span class="phone-digit">0</span>
-                    <span class="phone-digit">1</span>
-                    <span class="phone-digit">0</span>
-                    <span class="phone-digit">5</span>
-                    <span class="phone-digit">5</span>
-                    <span class="phone-digit">1</span>
-                    <span class="phone-digit">9</span>
-                    <span class="phone-digit">3</span>
-                    <span class="phone-digit">7</span>
-                    <span class="phone-digit">0</span>
-                    <span class="phone-digit">7</span>
-
-                </a>
 
             </div>
 
@@ -835,89 +555,106 @@
     </main>
 
 
+
     <!-- PROJECT POPUP -->
     <div
         class="popup"
-        id="projectPopup"
-    >
+        id="projectPopup">
 
         <div class="popup-content">
+
 
             <button
                 class="close"
                 id="closeProjectButton"
-                aria-label="Close project details"
-            >
+                aria-label="Close project details">
+
                 &times;
+
             </button>
+
 
             <img
                 id="popupImage"
-                alt="Project preview"
-            >
+                alt="Project preview">
+
 
             <span class="section-label">
                 PROJECT DETAILS
             </span>
 
+
             <h2 id="popupTitle"></h2>
+
 
             <p id="popupDescription"></p>
 
+
             <ul id="popupTasks"></ul>
+
 
         </div>
 
     </div>
+
 
 
     <!-- CONTACT POPUP -->
     <div
         class="contact-popup"
-        id="contactPopup"
-    >
+        id="contactPopup">
 
         <div class="contact-box">
+
 
             <button
                 class="close"
                 id="closeContactButton"
-                aria-label="Close contact form"
-            >
+                aria-label="Close contact form">
+
                 &times;
+
             </button>
+
 
             <span class="section-label">
                 LET'S CONNECT
             </span>
 
+
             <h2>
                 Contact Me
             </h2>
+
 
             <p>
                 Send your phone number and I will contact you as soon as possible.
             </p>
 
+
             <input
                 type="tel"
                 id="phoneInput"
                 placeholder="Phone Number"
-                aria-label="Phone Number"
-            >
+                aria-label="Phone Number">
+
 
             <button
                 class="send-btn"
-                id="sendPhoneButton"
-            >
+                id="sendPhoneButton">
+
                 Send
+
             </button>
 
+
             <p id="contactStatus"></p>
+
 
         </div>
 
     </div>
+
 
 
     <!-- FOOTER -->
@@ -932,59 +669,14 @@
             <span id="currentYear"></span>
         </p>
 
-        <span
-            id="typingText"
-            hidden
-            aria-hidden="true"
-        ></span>
-
     </footer>
+
 
 
     <!-- JavaScript -->
     <script src="script.js"></script>
 
-    <script>
-
-        document.addEventListener("DOMContentLoaded", () => {
-
-            const directCall =
-                document.querySelector(".direct-call");
-
-            const directCallButton =
-                document.querySelector("#directCallButton");
-
-            directCallButton?.addEventListener("click", () => {
-
-                const isOpen =
-                    directCall.classList.toggle("is-open");
-
-                directCallButton.setAttribute(
-                    "aria-expanded",
-                    isOpen
-                );
-
-                if (isOpen) {
-
-                    document
-                        .querySelectorAll(".phone-digit")
-                        .forEach(digit => {
-
-                            digit.style.animation = "none";
-
-                            void digit.offsetWidth;
-
-                            digit.style.animation = "";
-
-                        });
-
-                }
-
-            });
-
-        });
-
-    </script>
 
 </body>
+
 </html>

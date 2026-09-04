@@ -127,8 +127,46 @@ header {
 }
 
 .logo {
-    font-size: 26px;
-    letter-spacing: 2px;
+    position: relative;
+    flex: 0 0 auto;
+    width: clamp(125px, 12vw, 170px);
+    height: 42px;
+    overflow: hidden;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    white-space: nowrap;
+}
+
+.logo::before,
+.logo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    transition: opacity .22s ease-in-out;
+}
+
+/* Dark mode: dark logo */
+.logo::before {
+    background-image: url("https://uploads.onecompiler.io/44ssreqmg/44xbvrtf7/1000003078.png");
+    opacity: 1;
+}
+
+/* Light mode: light logo */
+.logo::after {
+    background-image: url("https://uploads.onecompiler.io/44ssreqmg/44xbvrtf7/1000003077.png");
+    opacity: 0;
+}
+
+html[data-theme="light"] .logo::before {
+    opacity: 0;
+}
+
+html[data-theme="light"] .logo::after {
+    opacity: 1;
 }
 
 nav {
@@ -574,6 +612,11 @@ footer p {
     animation: blink .8s infinite;
 }
 
+.phone-number,
+.phone-digit {
+    color: var(--text);
+}
+
 @keyframes heroFloat {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-18px); }
@@ -608,6 +651,11 @@ footer p {
         padding: 16px 5%;
     }
 
+    .logo {
+        width: clamp(120px, 35vw, 155px);
+        height: 36px;
+    }
+
     nav {
         gap: 13px;
     }
@@ -632,5 +680,12 @@ footer p {
 
     .cursor-glow {
         display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .logo {
+        width: 125px;
+        height: 32px;
     }
 }
